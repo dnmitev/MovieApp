@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 
 import { MovieModule } from './movies/movies.module';
 
+import { SharedModule } from './shared/shared.module';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -19,6 +21,7 @@ import { MovieModule } from './movies/movies.module';
       { path: '**', redirectTo: 'home', pathMatch: 'full' }
     ]),
     MovieModule,
+    SharedModule
   ],
   declarations: [
     AppComponent,

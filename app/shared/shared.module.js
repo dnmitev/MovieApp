@@ -11,7 +11,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var common_1 = require('@angular/common');
 var forms_1 = require('@angular/forms');
-var star_component_1 = require('./star.component');
+var star_component_1 = require('./star/star.component');
+var genre_component_1 = require('./genre/genre.component');
+var genre_service_1 = require('./genre/genre.service');
+var genres_service_1 = require('./genre/genres.service');
 var SharedModule = (function () {
     function SharedModule() {
     }
@@ -21,9 +24,17 @@ var SharedModule = (function () {
             exports: [
                 common_1.CommonModule,
                 forms_1.FormsModule,
-                star_component_1.StarComponent
+                star_component_1.StarComponent,
+                genre_component_1.GenreComponent
             ],
-            declarations: [star_component_1.StarComponent]
+            declarations: [
+                star_component_1.StarComponent,
+                genre_component_1.GenreComponent
+            ],
+            providers: [
+                genre_service_1.GenreService,
+                genres_service_1.GenresService
+            ]
         }), 
         __metadata('design:paramtypes', [])
     ], SharedModule);

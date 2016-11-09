@@ -13,6 +13,9 @@
                             <rating-star [rating]='movieData.vote_average'></rating-star>
                             <span class="release-date">Releeased: {{ movieData.release_date | date }}</span>
                         </div>
+                        <div>
+                            <genre *ngFor='let id of movieData.genre_ids' [genreId]='id'></genre>
+                        </div>
                     </div>
                 </div>
             </div>

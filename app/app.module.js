@@ -15,6 +15,7 @@ var router_1 = require('@angular/router');
 var app_component_1 = require('./app.component');
 var home_component_1 = require('./home/home.component');
 var movies_module_1 = require('./movies/movies.module');
+var shared_module_1 = require('./shared/shared.module');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -29,6 +30,7 @@ var AppModule = (function () {
                     { path: '**', redirectTo: 'home', pathMatch: 'full' }
                 ]),
                 movies_module_1.MovieModule,
+                shared_module_1.SharedModule
             ],
             declarations: [
                 app_component_1.AppComponent,
