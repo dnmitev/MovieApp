@@ -1,0 +1,8 @@
+.movie-pupular-item {
+    text-align: central;
+}
+
+.movie-pupular-item img {
+    border: 3px solid gray;
+    border-radius: 2em;
+}

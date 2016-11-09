@@ -1,0 +1,24 @@
+<div class="col s12">
+    <div class="card card-small horizontal">
+        <div class="card-image">
+            <img [src]='movieData.poster_path' [alt]='movieData.title' class="img img-responsive">
+        </div>
+        <div class="card-stacked">
+            <div class="card-content">
+                <div class="valign-wrapper">
+                    <div class="valign">
+                        <h2 class="header center-align">{{ movieData.title }}</h2>
+                        <blockquote class="left">{{ movieData.overview }}</blockquote>
+                        <div class="center-align">
+                            <rating-star [rating]='movieData.vote_average'></rating-star>
+                            <span class="release-date">Releeased: {{ movieData.release_date | date }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-action">
+                <a href="#">Details</a>
+            </div>
+        </div>
+    </div>
+</div>
